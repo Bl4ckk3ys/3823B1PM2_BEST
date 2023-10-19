@@ -1,3 +1,4 @@
 unsigned char max_byte(unsigned short) {
-    return 0; // Not implementation
+    int bin;
+    return 0; 
 }
