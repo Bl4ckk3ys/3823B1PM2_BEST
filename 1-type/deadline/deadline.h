@@ -6,7 +6,7 @@ int get_score(short score, int start, int stop, int now) {
         else return score/2;
     }
     else if((now > start) && (now < stop)){
-        double r=score*((double)(start-now+stop)/(stop));
+        double r=score-((now-start)*((double)score/2)/(stop-start));
         if (r - (int)r>0) return (int)(r+1);
         else return (int)r;
     }
