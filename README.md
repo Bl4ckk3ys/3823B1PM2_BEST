@@ -1,6 +1,6 @@
-# BEST_3823B1FI3
+# Репозиторий группы 3823Б1ПМ2
 Репозиторий для сдачи домашних работ с автоматической проверкой
-Ссылка на таблицу с результатами: https://docs.google.com/spreadsheets/d/1H5P1HT4jga-u8TJfBBs0CP5UymmJNsBwn4Tqx2CbFR8/edit?usp=sharing
 
+Ссылочкана таблицу: 
 
-НОВАЯ СТРОКА
+https://docs.google.com/spreadsheets/d/1BqNJbk_HznUNdZkdAuqiiuqR5L3-uzfW-K7nVKXdNNQ/edit?usp=sharing
