@@ -106,7 +106,7 @@ jobs:
         
       - name: Configure
         shell: bash
-        working-directory: /home/runner/work/BEST_3823B1FI3/BEST_3823B1FI3
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
         run: |
           mkdir build
           mkdir instdir
@@ -114,18 +114,18 @@ jobs:
           
       - name: Build
         shell: bash
-        working-directory: /home/runner/work/BEST_3823B1FI3/BEST_3823B1FI3
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
         run: cmake --build ./build --config ${{ matrix.config.build_type }}
 
       - name: See build 2
         if: always()
         shell: bash
-        working-directory: /home/runner/work/BEST_3823B1FI3/BEST_3823B1FI3
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
         run: ls
 
       - name: Very hard setting load json
         shell: bash
-        working-directory: /home/runner/work/BEST_3823B1FI3/BEST_3823B1FI3
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
         run: |
           pip install pandas
           pip install gdown
@@ -133,7 +133,7 @@ jobs:
 
       - name: Load magscr, tstscr, mag
         shell: bash
-        working-directory: /home/runner/work/BEST_3823B1FI3/BEST_3823B1FI3
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
         run: |
           gdown 1VLNuCVgDOw6PMqHMIsBl5xoYjYmPbCEK
           gdown 1qFuKKr6acDVp3JMEy1VaIqIgsfpAA2xD
@@ -142,7 +142,7 @@ jobs:
 
       - name: 0-Begin_Task
         shell: bash
-        working-directory: /home/runner/work/BEST_3823B1FI3/BEST_3823B1FI3
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
         run: |
           ./build/sum
           python3 fill_magazine.py -t "0-Begin_Task" -r "$(echo $?)"
@@ -150,7 +150,7 @@ jobs:
       - name: 1-type seconds
         if: always()
         shell: bash
-        working-directory: /home/runner/work/BEST_3823B1FI3/BEST_3823B1FI3
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
         run: |
           ./build/1-type/seconds
           python3 fill_magazine.py -t "seconds" -r "$(echo $?)"
@@ -158,7 +158,7 @@ jobs:
       - name: 1-type clock
         if: always()
         shell: bash
-        working-directory: /home/runner/work/BEST_3823B1FI3/BEST_3823B1FI3
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
         run: |
           ./build/1-type/clock
           python3 fill_magazine.py -t "clock" -r "$(echo $?)"
@@ -166,7 +166,7 @@ jobs:
       - name: 1-type module
         if: always()
         shell: bash
-        working-directory: /home/runner/work/BEST_3823B1FI3/BEST_3823B1FI3
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
         run: |
           ./build/1-type/module
           python3 fill_magazine.py -t "module" -r "$(echo $?)"
@@ -174,7 +174,7 @@ jobs:
       - name: 1-type decomposition
         if: always()
         shell: bash
-        working-directory: /home/runner/work/BEST_3823B1FI3/BEST_3823B1FI3
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
         run: |
           ./build/1-type/decomposition
           python3 fill_magazine.py -t "decomposition" -r "$(echo $?)"
@@ -182,7 +182,7 @@ jobs:
       - name: 1-type point
         if: always()
         shell: bash
-        working-directory: /home/runner/work/BEST_3823B1FI3/BEST_3823B1FI3
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
         run: |
           ./build/1-type/point
           python3 fill_magazine.py -t "point" -r "$(echo $?)"
@@ -190,7 +190,7 @@ jobs:
       - name: 1-type char-category
         if: always()
         shell: bash
-        working-directory: /home/runner/work/BEST_3823B1FI3/BEST_3823B1FI3
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
         run: |
           ./build/1-type/char-category
           python3 fill_magazine.py -t "char-category" -r "$(echo $?)"
@@ -198,7 +198,7 @@ jobs:
       - name: 1-type double
         if: always()
         shell: bash
-        working-directory: /home/runner/work/BEST_3823B1FI3/BEST_3823B1FI3
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
         run: |
           ./build/1-type/double
           python3 fill_magazine.py -t "double" -r "$(echo $?)"
@@ -206,7 +206,7 @@ jobs:
       - name: 1-type byte
         if: always()
         shell: bash
-        working-directory: /home/runner/work/BEST_3823B1FI3/BEST_3823B1FI3
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
         run: |
           ./build/1-type/byte
           python3 fill_magazine.py -t "byte" -r "$(echo $?)"
@@ -214,7 +214,7 @@ jobs:
       - name: 1-type deadline
         if: always()
         shell: bash
-        working-directory: /home/runner/work/BEST_3823B1FI3/BEST_3823B1FI3
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
         run: |
           ./build/1-type/deadline
           python3 fill_magazine.py -t "deadline" -r "$(echo $?)"
@@ -223,7 +223,7 @@ jobs:
       - name: 2-if_else_switch Change
         if: always()
         shell: bash
-        working-directory: /home/runner/work/BEST_3823B1FI3/BEST_3823B1FI3
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
         run: |
           ./build/2-if_else_switch/change
           python3 fill_magazine.py -t "Change" -r "$(echo $?)"
@@ -231,7 +231,7 @@ jobs:
       - name: 2-if_else_switch leapyear
         if: always()
         shell: bash
-        working-directory: /home/runner/work/BEST_3823B1FI3/BEST_3823B1FI3
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
         run: |
           ./build/2-if_else_switch/leapyear
           python3 fill_magazine.py -t "LeapYear" -r "$(echo $?)"
@@ -239,7 +239,7 @@ jobs:
       - name: 2-if_else_switch chocolate
         if: always()
         shell: bash
-        working-directory: /home/runner/work/BEST_3823B1FI3/BEST_3823B1FI3
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
         run: |
           ./build/2-if_else_switch/chocolate
           python3 fill_magazine.py -t "Chocolate" -r "$(echo $?)"
@@ -247,7 +247,7 @@ jobs:
       - name: 2-if_else_switch icecream
         if: always()
         shell: bash
-        working-directory: /home/runner/work/BEST_3823B1FI3/BEST_3823B1FI3
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
         run: |
           ./build/2-if_else_switch/icecream
           python3 fill_magazine.py -t "IceCream" -r "$(echo $?)"
@@ -255,7 +255,7 @@ jobs:
       - name: 2-if_else_switch QuadraticEquation
         if: always()
         shell: bash
-        working-directory: /home/runner/work/BEST_3823B1FI3/BEST_3823B1FI3
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
         run: |
           ./build/2-if_else_switch/QuadraticEquation
           python3 fill_magazine.py -t "QuadraticEquation" -r "$(echo $?)"
@@ -263,7 +263,7 @@ jobs:
       - name: 2-if_else_switch monthday
         if: always()
         shell: bash
-        working-directory: /home/runner/work/BEST_3823B1FI3/BEST_3823B1FI3
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
         run: |
           ./build/2-if_else_switch/monthday
           python3 fill_magazine.py -t "MonthDay" -r "$(echo $?)"
@@ -271,7 +271,7 @@ jobs:
       - name: 2-if_else_switch chess
         if: always()
         shell: bash
-        working-directory: /home/runner/work/BEST_3823B1FI3/BEST_3823B1FI3
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
         run: |
           ./build/2-if_else_switch/chess
           python3 fill_magazine.py -t "Chess" -r "$(echo $?)"
@@ -279,7 +279,7 @@ jobs:
       - name: 2-if_else_switch twoboxes
         if: always()
         shell: bash
-        working-directory: /home/runner/work/BEST_3823B1FI3/BEST_3823B1FI3
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
         run: |
           ./build/2-if_else_switch/twoboxes
           python3 fill_magazine.py -t "TwoBoxes" -r "$(echo $?)"
@@ -455,7 +455,7 @@ jobs:
       - name: Estimate
         if: always()
         shell: bash
-        working-directory: /home/runner/work/BEST_3823B1FI3/BEST_3823B1FI3
+        working-directory: /home/runner/work/3823B1PM2_BEST/3823B1PM2_BEST
         run: python3 testscript.py -p ${{github.actor}}
 
       - name: Upload release asset
