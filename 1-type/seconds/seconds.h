@@ -1,5 +1,5 @@
 int get_years(int seconds) {
-    return 0; // Not implementation
+    return (long long)((double)seconds/(60*60*31*12))+ 1970; //протестить
 }
 
 int get_month(int seconds) {
