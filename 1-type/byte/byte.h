@@ -1,3 +1,7 @@
 unsigned char max_byte(unsigned short number) {
-    return 0; // Not implementation
+    if (number <= 255) return number;
+    else {
+        number = number >> (8);
+        return number; 
+    }
 }
