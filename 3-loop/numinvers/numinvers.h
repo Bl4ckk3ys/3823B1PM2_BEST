@@ -1,4 +1,4 @@
-#include <math.h>
+#include <math.h>//
 int num_invers(int num){
     int ans = 0,i = 0;
     while(num>0){
