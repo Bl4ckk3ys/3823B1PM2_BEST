@@ -1,9 +1,12 @@
 long fib(int m){
-    int n = 1, s = 0,tmp = 1;
-    while(n<m){
-        s += n;
-        n += tmp; 
-        tmp = n;
+    int f1 = 0, f2 = 1,tmp;
+    long s = 0;
+    while(f2<=m){
+        tmp = f1+f2;
+        s += f2;
+        f1 = f2;
+        f2 = tmp;     
     }
-    return s;
+    if (s==0) return -1;
+    else return s;
 }
