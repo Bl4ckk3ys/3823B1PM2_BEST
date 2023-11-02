@@ -1,6 +1,6 @@
 #include <math.h>
 
-//
+
 char find_bin_pattern(int number){
     int i=0,c = 0;
     long long int x=0;
