@@ -4,4 +4,4 @@ unsigned char max_byte(unsigned short number) {
         number = number >> (8);
         return number; 
     }
-}
+}//
