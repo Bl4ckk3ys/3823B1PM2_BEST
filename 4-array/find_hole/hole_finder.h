@@ -10,10 +10,3 @@ int hole_finder(int matrix[], int length, int width){
     }
     return ((int)((double)index/width))*100 + (index - (int)((double)index/width)*width)%width;
 }
-
-
-    // for(int i = 0;i<length;i++){
-    //    for(int j = 3;j<width;j++){
-    //         matrix[i*width+j];
-    //    }
-    // }
