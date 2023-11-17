@@ -2,7 +2,7 @@
 #include <stddef.h>
 
 int* find_even(int* arr, int size){
-    for(int i;i<size;i++){
+    for(int i = 0;i < size;i++){
         if ((int)fabs(arr[i])%2==0) return &arr[i];
     }
     return NULL;
